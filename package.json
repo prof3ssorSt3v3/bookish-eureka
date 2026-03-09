@@ -6,8 +6,8 @@
   "scripts": {
     "hello": "echo \" $npm_config_port\" ",
     "goodbye": "echo $PATH",
-    "Xprepublish": "npm version patch --no-git-tag-version ",
-    "publish": "git add -A && git commit -m $npm_config_msg ",
+    "prepublish": "git add -A",
+    "publish": "git commit -m $npm_config_msg ",
     "Xpostpublish": "git push origin main"
   },
   "keywords": [],
