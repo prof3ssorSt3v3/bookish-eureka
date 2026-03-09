@@ -1,0 +1,17 @@
+{
+  "name": "mod9.1",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hello": "echo \" $npm_config_port\" ",
+    "goodbye": "echo $PATH",
+    "prepublish": "npm version patch --no-git-tag-version ",
+    "publish": "git add -A && git commit -m \"$npm_config_msg\" ",
+    "postpublish": "echo \"POST\" "
+  },
+  "keywords": [],
+  "author": "Prof3ssorSt3v3 <griffis@algonquincollege.com>",
+  "license": "ISC",
+  "type": "module"
+}
