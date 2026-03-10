@@ -1,6 +1,6 @@
 {
   "name": "mod9.1",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "posthello": "echo  \"POST\" ",
     "patches": "npm version patch --no-git-tag-version",
     "predeploy": "npm run patches",
-    "deploy": "git add -A && git commit -m $npm_config_msg ",
+    "deploy": "git add -A && git commit -m  ",
     "postdeploy": "git push origin main"
   },
   "keywords": [],
