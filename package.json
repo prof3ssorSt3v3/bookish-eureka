@@ -1,13 +1,13 @@
 {
   "name": "mod9.1",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "main": "index.js",
   "scripts": {
     "prehello": "echo \"PRE\" ",
-    "hello": "echo $npm_config_msg ",
+    "hello": "echo $npm_config_commitmsg ",
     "posthello": "echo  \"POST\" ",
-    "patches": "npm version patch --no-git-tag-version --force",
+    "patches": "npm version patch --no-git-tag-version",
     "predeploy": "npm run patches && git add -A",
     "deploy": "git commit -m \"$npm_config_commitmsg\" ",
     "postdeploy": "git push origin main"
