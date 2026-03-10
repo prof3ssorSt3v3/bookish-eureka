@@ -1,6 +1,6 @@
 {
   "name": "mod9.1",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "patches": "npm version patch --no-git-tag-version",
     "predeploy": "npm run patches && git add -A",
     "deploy": "git commit -m \" $npm_config_commitmsg \" ",
-    "postdeploy": "git push origin main"
+    "postdeploy": "git push origin $npm_config_branch"
   },
   "keywords": [],
   "author": "Prof3ssorSt3v3 <griffis@algonquincollege.com>",
